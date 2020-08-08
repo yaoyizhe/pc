@@ -1,0 +1,90 @@
+#cart_box>.content{width: 1000px;
+    margin: 0 auto;}
+.cartlist_th_box{height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;}
+.cartlist_th_box>ul{display: flex;}
+.cartlist_th_box li{font-size: 14px;}
+.iconfont_cart{width: 60px;
+    text-align: center;}
+.iconfont_cart>input{width: 16px;
+    height: 16px;
+    vertical-align: middle;}
+.sp{width: 458px;
+    text-align: center;}
+.th-pin{width: 87px;}
+.th-price{width: 75px;}
+.th-num{width: 148px;
+    text-align: center;}
+.th-price-rig{width: 73px;
+    text-align: right;}
+.th-edit{width: 119px;
+    text-align: right;}
+/*店铺*/
+#cart_list_box>.shop_box{padding-bottom: 20px;}
+/*店铺标题栏*/
+.shop_box>.shop_name_tit{line-height: 40px;
+    border-bottom: 1px solid #aeaeae;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;}
+.shop_name_tit>ul{display: flex;}
+.shop_name_tit .bold{width: 156px;
+    font-weight: 700;}
+.shop_name_tit .gray{width: 84px;}
+
+/*列表*/
+.order_content{height: 108px;
+    border-bottom: 1px solid #e5e5e5;}
+.order_content>ul{display: flex;
+    line-height: 20px;}
+.order_content>ul>li{padding-top: 16px;} 
+.order_content .iconfont_cart{line-height: 90px;}   
+.order_content .td_item{width: 458px;}
+.td_item>.cart_pic{margin-right: 20px;
+    float: left;}
+.td_item>.cart_pic>a{width: 80px;
+    height: 80px;
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    font-size: 0;
+    box-sizing: content-box;}
+.td_item>.cart_pic img{max-width: 80px;
+    max-height: 80px;
+    vertical-align: middle;}
+.td_item>.text_box{padding-right: 55px;
+		height: 85px;}
+.th-num>a{display:inline-block;
+	border: 1px solid #ccc;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 500;
+	vertical-align: middle;}
+.th-num>input{border: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	height: 25px;
+	line-height: 25px;
+	width: 38px;
+	text-align: center;}
+/*结算*/
+.cart_summary_box>.clearfix{width: 1000px;
+  margin: 0 auto;
+  height: 50px;
+	line-height: 50px;
+	background: #eee;
+	display: flex;
+  justify-content: space-between;}
+.cart_summary_box>.clearfix>ul{display: flex;
+    justify-content: space-between;}
+.clearfix .btn_submit_box{width: 100px;
+    text-align: center;
+    background: #8c222c;}
+.clearfix .btn_submit_box>a{color: #fff;
+    font-size: 20px;}
+.pull-left{margin-right: 15px;}

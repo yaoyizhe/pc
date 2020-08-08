@@ -1,0 +1,203 @@
+.alert{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 50px;
+    margin-left: -100px;
+    z-index: 99999;
+    padding: 15px;
+    border: 1px solid transparent;
+		border-radius: 4px;
+		background: rgba(0, 0, 0, 0.6);
+		color: #fff;
+}
+.shop_top_box{background: url(../img/greendianzhao_bg@2x.png);
+    background-size: 1280px 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 46px;}
+.shop_top_text{font-size: 46px;}
+.main{width: 1200px;
+    margin: 0 auto;}
+.main-top{margin-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;}
+.exhibition{width: 300px;
+    height: 300px;
+    line-height: 297px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    overflow: hidden;}
+.exhibition>img{max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle}
+.major-function{width: 620px;}
+.title-box{overflow: hidden;
+    margin-top: -5px;
+    position: relative;}
+.title-box>h1{font-weight: bolder;
+    padding-left: 2px;
+    font-size: 16px;
+    line-height: 28px;}
+.title-box>a{float: right;
+    color: #bbbbbb;
+    margin-top: -10px;}
+.base-info>p{padding:0 2px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #a5806d;}
+.keywords-define{display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding: 6px 0 6px 9px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;}
+.keywords-define>ul{width: 203px;}
+/*价格信息*/
+i{font-style: normal;}
+.price-group{background: #f3f0e9;
+    margin-top: 12px;}
+.price-group1{padding: 7px 0;}
+.price-group1>p{height: 29px;
+    line-height: 29px;
+    overflow: hidden;}
+.title{padding-top: 1px;
+    margin: 0 19px 0 10px;
+    color: #999;}
+/*运费信息*/
+.carry{margin-top: 8px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e5e5e5;}
+/*上书时间*/
+.up-book-data{height: 35px;
+    line-height: 40px;}
+/*购买*/
+.buy-group{position: relative;
+    margin-top: 14px;}
+.on-sell a{display: inline-block;
+    height: 40px;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;}
+.on-sell>.go-buy{width: 152px;
+    border-radius: 2px;
+    background: #fff;
+    color: #8c222c;
+    border: 1px solid #8c222c;
+    margin-right: 18px;}
+.on-sell>.add-cart{width: 160px;
+    margin-top: -1px;
+    border-radius: 2px;
+    color: #fff;
+    background: #8c222c;}
+/*书店*/
+.store-info-wrapper{width: 200px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+    border-top: 2px solid #97A69C;
+    padding-bottom: 10px;}
+.storeInfo{margin: 10px auto;
+    width: 81px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 24px;}
+.storeInfo>img{width: 81px;}
+.storeIns_content{
+    margin: 10px 12px 0;
+    padding-bottom: 10px;}
+.storeIns_content>.storeIns_name{margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bolder;}
+.storeIns_content>ul li{padding-right: 10px;
+    color: #999;}
+.rate-block{padding: 10px 12px 5px;
+    background: #fafafa;}
+.rate-block>ul li{padding-right: 10px;}
+.shop_owner{margin: 10px 12px 0;}
+.shop_owner>ul li{margin-bottom: 5px;}
+.storeIns_btn{padding-bottom: 5px;
+    margin-top: 15px;
+    text-align: center;}
+.storeIns_btn a{display: inline-block;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 2px;
+    background: #f6f7f6;
+    border: 1px solid #e5e5e5;}
+/*主要信息区*/
+.right-block{width: 780px;
+    margin: 0 auto;
+    border: 1px solid #e5e5e5;}
+.page-tab{position: relative;
+    height: 46px;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-right: 0;}
+.page-tab>ul{display: flex;
+    font-size: 16px;}
+.page-tab>ul li{width: 180px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 45px;}
+.page-cont{padding-top: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 820px;
+    padding-bottom: 25px;
+    padding-left: 40px;}
+.book-cat{width: 742px;
+    padding-top: 26px;
+    padding-bottom: 16px;
+    font-size: 13px;}
+.book-cat>dt{ 
+    float: left;}
+.book-itemSn{width: 742px;
+    font-size: 13px;}
+.book-itemSn>dt{float: left;}
+.figure-info-box{width: 740px;
+    text-align: center;}
+.figure-info-box>li{display: block;
+    padding: 25px 0;}
+/*相似商品*/
+.book_list_box{width:1200px; 
+    margin: 40px auto 0;}
+.book_list_box>.tith{height: 47px;
+    background: #e1f7ff;
+    border-bottom: 3px solid #07bafd;
+    line-height: 47px;}
+    .floorCenter>ul{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .floorCenter>ul li{
+        width: 185px;
+        height: 266px;
+        text-align: center;
+        }
+    .booKimg{
+        margin-top: 10px;
+        }
+    .booKimg img{max-width: 158px;
+        max-height: 158px;}
+    .floorCenter li h3{width: 145px;
+        padding: 0 20px;
+        line-height: 18px;
+        height: 18px;
+        overflow: hidden;
+        margin-top: 15px;}
+    .floorCenter li p{margin-top: 4px;
+        color: #666;
+        padding: 0 20px;
+        line-height: 18px;
+        height: 18px;
+        overflow: hidden;}
+    .floorCenter li>.priceWrap{margin-top: 5px;
+        padding: 0 20px;
+        line-height: 16px;
+        overflow: hidden; }

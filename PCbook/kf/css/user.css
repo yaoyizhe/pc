@@ -1,0 +1,99 @@
+.content{width: 980px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;}
+/*左侧栏开始*/
+#person_left_box{width: 170px;
+    border: 1px solid #dcdcdc;}
+#person_left_box>.menu_box{margin-bottom: 1px;}
+.menu_box>.lead_tit{position: relative;}
+.lead_tit>h3{padding-left: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 33px;
+    line-height: 33px;
+    background: url(../img/spring/buyer_left_title.png) no-repeat 0 0;}
+.menu_box>.lead_con{padding: 5px 0;}
+.lead_con li{height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    margin: 3px 0;
+    position: relative;
+    overflow: hidden;}
+.lead_con li>a{padding: 0 10px 0 50px;
+    display: block;
+    width: 133px;
+    font-size: 14px;}
+.lead_con .ico1 a{background: url(../img/spring/user_ico.jpg) no-repeat 20px 5px;}
+.lead_con .ico2 a{background: url(../img/spring/user_ico.jpg) no-repeat 22px -35px;}
+.lead_con .ico3 a{background: url(../img/spring/user_ico.jpg) no-repeat 22px -76px;}
+.lead_con .ico4 a{background: url(../img/spring/user_ico.jpg) no-repeat 21px -230px;}
+.lead_con .ico5 a{background: url(../img/spring/user_ico.jpg) no-repeat 22px -275px;}
+.lead_con .ico6 a{background: url(../img/spring/user_ico.jpg) no-repeat 23px -310px;}
+.lead_con>.line_margin{border-top: 1px solid #ddd;
+    margin: 8px 20px;}
+.lead_con>.user_list1>li>a{padding: 0 10px 0 25px;}
+/*右侧栏开始*/
+.right_bar{width: 800px;}
+/*个人资料开始*/
+.right_bar>.user_info{display: flex;
+    justify-content: space-between;}
+.user_info>.grid_4{width: 108px;
+    height: 108px;
+    border: 1px solid #dcdcdc;}
+.grid_4>img{width: 110px;
+    height: 110px;}
+.user_info .txt{line-height: 24px;
+    height: 24px;}
+.user_info>.grid_16{width: 470px;}
+.grid_16>.font14{font-size: 14px;
+    font-weight: 700;}
+.grid_16>.m_t15{margin-top: 15px;}
+.m_t15>.small_true{background: url(../img/spring/index_ico.gif) no-repeat 0 -83px;}
+.m_r5{margin-right: 5px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 15px;
+    height: 16px;}
+.small_erro{background: url(../img/spring/index_ico.gif) no-repeat 0 -44px;}
+.user_info .txt>a{color: #004499;}
+.user_info .grid_7{line-height: 24px;
+    overflow: hidden;
+    margin-top: 39px;
+    width: 200px;}
+/*交易提醒*/
+.user_tit_box{border: 1px solid #dcdcdc;
+    background: #fff;
+    background: #e2edfb;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px 0 10px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 10px;}
+.user_box{border: 1px solid #dcdcdc;
+    border-top: none;
+    padding: 10px;
+    line-height: 24px;}
+.user_box span{ color: #666;}
+.m_r10{margin-right: 10px;}
+/*资金账户*/
+.user_box a{color: #004499;}
+.user_box>p .red{color: #f00;}
+.m_t10{margin-top: 10px;}
+a.btn_gray_46_25{width: 46px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    display: inline-block;
+    background: #f4f4f4;
+    border: 1px solid #f4f4f4;}
+/*常用入口开始*/
+.user_box .first{font-size: 14px;
+    margin: 0 10px 0 0;}
+.clear{clear: both;}

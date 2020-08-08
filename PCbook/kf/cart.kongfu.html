@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/cart.css">
+		<link rel="stylesheet" href="css/header.css">
+		<title>Document</title>
+		<style>
+		*{margin: 0; padding: 0;font-size: 12px;}
+		a{text-decoration: none;
+			color: #333;}
+		ul li{list-style: none;}
+		</style>
+</head>
+<body>
+	<div id="head"></div>
+	<!--购物车商品列表-->
+  <div id="cart_box">
+		<div class="content">
+			<!--全选标题项-->
+			<div class="cartlist_th_box">
+				<ul>
+					<li class="iconfont_cart"><input class="select-all" type="checkbox">全选</li>
+					<li class="sp">商品</li>
+					<li class="th-pin">品相</li>
+					<li class="th-price">单价</li>
+					<li class="th-num">数量</li>
+					<li class="th-price-rig">金额</li>
+					<li class="th-edit">操作</li>
+				</ul>
+			</div>
+			<div id="cart_list_box">
+				<!--店铺-->
+				
+		  </div>
+	  </div>
+	<!--结算-->
+	<div class="cart_summary_box">
+		<div class="clearfix">
+			<ul>
+				<li class="iconfont_cart"><input class="select-all" type="checkbox">全选</li>
+				<li class="pull-left"><a class="ALLdel">批量删除</a></li>	
+			</ul>
+			<ul>
+				<li class="cart_statistics_box">
+					<span class="pull-left">已选<span class="red fb"></span>件商品</span>
+					<span class="pull-left">合计（不含运费）：</span>
+					<span class="pull-left">￥<span id="AllTotal"></span></span>
+				</li>
+				<li class="btn_submit_box"><a href="">去结算</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/cart.js"></script>
+</html>

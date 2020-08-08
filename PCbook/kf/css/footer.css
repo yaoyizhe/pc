@@ -1,0 +1,16 @@
+.foot-help-wrapper{width: 100%;
+    background: #fafafa;
+    }
+.foot-help-container{width: 1200px;
+    margin: 20px auto 0;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-around;}
+.foot-help-container>ul{width: 247px;
+    text-align: center;}
+.foot-help-container li{height: 30px;
+    line-height: 30px;}
+.foot-help-container li>h3{
+    font-size: 14px;
+    color: #666;}
+.foot-help-container li a{color: #8999a9;}

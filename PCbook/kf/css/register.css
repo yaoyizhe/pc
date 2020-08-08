@@ -1,0 +1,56 @@
+.head{height: 78px;
+    border-bottom: 1px solid #ccc;}
+.head>a{margin: 20px 0 0 185px;}
+.head>a>img{width: 206px;
+    height: 35px;
+    margin-top: 19px;}
+/*内容*/
+.content{width: 1000px;
+    margin: 0 auto;}
+.content>.login_box{background: #fff;
+	margin-top: 20px;
+	padding: 60px 50px 170px;}
+.registTitle{overflow: hidden;
+	height: 24px;
+	line-height: 24px;}
+.registTitle>b{float: left;
+	color: #333;
+	height: 24px;
+	font-size: 22px;
+	padding-left: 13px;
+	border-left: 3px solid #e60000;
+	font-weight: bold;}
+.registTitle>span{float: left;
+	padding-top: 5px;
+	font-size: 14px;
+	color: #e60000;
+	margin-left: 11px;}
+.registTitle>.backLogin{float: right;
+	color: #c1c1c1;
+	font-size: 14px;
+	padding-top: 5px;}
+.backLogin>a{color: #999999;}
+#form-register{margin-top: 50px;
+	overflow: hidden;}
+.form-group{padding-bottom: 30px;
+	overflow: hidden;}
+.form-group>label{display: inline-block;
+	height: 42px;
+	line-height: 42px;
+	width: 100px;
+	margin-left: 97px;
+	font-size: 16px;}
+.form-group>input{border-radius: 4px;
+	overflow: hidden;
+	padding: 10px 20px;
+	width: 303px;
+	padding-right: 35px;
+	border: 1px solid #dcdcdc;}
+.registBtn{margin: 23px 0 0 177px;}
+.registBtn>button{height: 50px;
+	border-radius: 5px;
+	width: 380px;
+	background: #e60000;
+	color: #fff;
+	font-size: 16px;
+	border-width: 0;}

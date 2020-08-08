@@ -1,0 +1,73 @@
+#header{min-width: 1200px;}
+/*头部通栏*/
+		.navheader{height:36px;
+				background:#8c222c;
+		}
+		.header-wrap{
+				position: relative;
+			    height: 36px;
+				width: 1200px;
+				margin: 0 auto;
+				color: #e2c8ca;
+		}
+		.header-wrap>.slogan-box{
+		position: absolute;
+    	padding-left: 6px;
+    	line-height: 36px;
+    	}
+    .slogan-box img{ vertical-align: middle; border-radius: 50px; }
+		.topBar>.topBarR{
+			float: right;
+			display: flex;
+			margin-top: 0;
+			height: 36px;
+			line-height: 36px;
+    	}
+    .menu-list>a{color: #e2c8ca;}
+		.topBarR>li{
+			padding: 0 15px;
+    }
+    /*下拉菜单*/
+    .menu-list{position: relative;}
+		.menu-hd{display: none;
+			text-align: center;
+			background-color: #fff;
+			z-index: 9999;
+			color: #333;}
+		.menu-list>.login-box{width: 130px;
+			position: absolute;
+			left: auto;
+			right: 0;
+			padding: 20px 16px 14px;}
+		.login-box li{width: 130px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #8c222c;
+			border-radius: 3px;
+			margin-bottom: 15px;}
+		.login-box .login-btn{background: #8c222c;color: #fff;}
+		.login-box .register-btn{background: #f8f7f3;color: #8c222c;}
+		.menu-list>.personal-center,.menu-list>.seller-center,.menu-list>.help-center{position: absolute;
+			width: 70px;
+			left: 0;
+			right: 0;}
+		.menu-list:hover .menu-hd{display: block;}
+/*顶部搜索*/
+		.header-search-box{
+			height:100px;
+			background:#f2f1ea;
+		}
+		.header-search{
+            display: flex;
+			justify-content: space-between;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.header-search img{margin-top:25px; width: 262px;
+			vertical-align: middle;}
+		.search-box{
+			line-height: 100px;}
+		.search-box input{width:590px;
+			height: 33px;}
+		.search-box button{width:85px;
+			height: 36px;}

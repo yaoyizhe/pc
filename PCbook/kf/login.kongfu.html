@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/login.css">
+		<title>Document</title>
+		<style>
+			*{margin: 0;padding: 0;}
+			a{text-decoration: none;}
+			body{background: #f7f7f6;}
+		</style>
+</head>
+<body>
+	<div class="alert"></div>
+	<div class="head">
+		<a href="kongfu.html"><img src="img/login/logo-220.png" alt=""></a>
+	</div>
+	<!--内容-->
+	<div class="content">
+		<div class="login_box">
+			<div class="registTitle">
+				<b>用户登陆</b>
+			</div>
+			<form id="form-register" method="post" action="">
+				<div class="form-group">
+					<label for="uphone">手机号：</label>
+					<input id="phone" type="text" placeholder="请输入手机号">
+				</div>
+				<div class="form-group">
+					<label for="upwd">密码：</label>
+					<input id="upwd" type="password" placeholder="请输入密码">
+				</div>
+				<div class="registBtn">
+					<input type="button" value="登陆">
+				</div>
+				<div class="otherLink">
+					<a href="">忘记密码?</a>
+					<a href="">新用户注册>></a>
+				</div>
+			</form>
+		</div>
+	</div> 
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/login.js"></script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/register.css">
+		<title>Document</title>
+		<style>
+			*{margin: 0;padding: 0;}
+			a{text-decoration: none;}
+			body{background: #f7f7f6;}
+		</style>
+</head>
+<body>
+  <div class="head">
+		<a href=""><img src="img/login/logo-220.png" alt=""></a>
+	</div>
+	<!--内容-->
+	<div class="content">
+		<div class="login_box">
+			<div class="registTitle">
+				<b>新用户注册</b>
+				<span>新用户专享：19减5优惠券</span>
+				<div class="backLogin">
+					"已有账号？"<a href="">请登陆</a>
+				</div>
+			</div>
+			<form id="form-register" method="post">
+				<div class="form-group">
+					<label for="uname">用户名：</label>
+					<input id="uname" type="text" placeholder="请输入用户名" >
+					<span></span>
+				</div>
+				<div class="form-group">
+					<label for="upwd">登陆密码：</label>
+					<input id="upwd" type="password" placeholder="请输入密码">
+					<span></span>
+				</div>
+				<div class="form-group">
+					<label for="upwdconfirm">确认密码：</label>
+					<input id="upwdconfirm" type="password" placeholder="请确认密码">
+					<span></span>
+				</div>
+				<div class="form-group">
+					<label for="phone">手机号：</label>
+					<input id="phone" type="text" placeholder="请输入手机号">
+					<span></span>
+				</div>
+				<div class="registBtn">
+					<button type="button">立即提交</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/register.js"></script>
+</html>
