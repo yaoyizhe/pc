@@ -8,17 +8,25 @@ app.use(cors({
 
 app.use(express.static('./public'))
 
-const proRouter=require('./routes/user.js');
-const productRouter=require('./routes/product.js');
 
 const bodyParser=require('body-parser');
 app.use(bodyParser.urlencoded({
   extended:false
 }));
 
-
-
+const proRouter=require('./routes/user.js');
 app.use('/pro',proRouter);
+
+const productRouter=require('./routes/product.js');
 app.use('/product',productRouter);
 
 app.listen(8080);
+
+app.use((err,req,res,next)=>{
+  res.status(500)
+  res.send({
+    code:500,
+    msg:'Sorry! Server tmp error! Please retry later!',
+    err:err
+  })
+})

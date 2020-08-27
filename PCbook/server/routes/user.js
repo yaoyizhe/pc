@@ -8,7 +8,10 @@ router.get("/login",(req,res)=>{
 	var $uphone=req.query.uphone;
 	var $upwd=req.query.upwd;
 	pool.query('select * from kf_user where uphone=? and upwd=?',[$uphone,$upwd],(err,result)=>{
-		if(err) throw err;
+		if(err){
+			next(err)
+			return
+		}
 		if(result.length>0){
 			res.send("1");
 		}else{
@@ -20,7 +23,10 @@ router.get("/login",(req,res)=>{
 router.post("/regist",(req,res)=>{
 	let obj=req.body;
 	pool.query('select * from kf_user where uphone=?',[obj.uphone],(err,result)=>{
-		if(err) throw err;
+		if(err){
+			next(err)
+			return
+		}
 		if(result.length>0){
 			res.send("1");
 		}else{

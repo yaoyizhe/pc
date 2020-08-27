@@ -5,33 +5,48 @@ const pool=require('../pool.js');
 let router=express.Router();
 router.get("/search",(req,res)=>{
 	pool.query('select * from kf_product ',(err,result)=>{
-		if(err) throw err;
-		res.send(result);
+		if(err){
+			next(err)
+			return
+		}
+		res.send({code:200,result});
 	});
 });
 router.get("/detail",(req,res)=>{
 	var $pid=req.query.pid;
 	pool.query('select * from kf_product where pid=?',[$pid],(err,result)=>{
-		if(err) throw err;
-		res.send(result);
+		if(err){
+			next(err)
+		  return
+		}
+		res.send({code:200,result});
 	});
 });
 //加入购物车
 router.post("/insert",(req,res)=>{
 	let obj=req.body;
 	pool.query('INSERT INTO kf_car SET ?',[obj],(err,result)=>{
-	if(err) throw err;
-	res.send(result);
+	if(err){
+		next(err)
+		return
+	}
+	res.send({code:200,result});
 }); 
 });
 router.get("/inquery",(req,res)=>{
 	var $uid=req.query.uid;
 	pool.query('select s.sid,s.shopname from kf_store as s inner join kf_car as c on s.sid=c.sid where c.uid=? ',[$uid],(err,result)=>{
-		if(err) throw err;
+		if(err){
+			next(err)
+			return
+		}
 		store=result;
 	});
 	pool.query('select p.pid,p.title,p.author,p.pic,p.price,p.sid from kf_product as p inner join kf_car as c on p.pid=c.pid where c.uid=? ',[$uid],(err,result)=>{
-		if(err) throw err;
+		if(err){
+			next(err)
+			return
+		}
 		res.send({message:'查询成功',code:200,product:result,store:store});
 	});
 });
@@ -41,15 +56,21 @@ router.get("/class",(req,res)=>{
 	var $pno=parseInt(req.query.pno);
 	let start=($pno-1)*$count;
 	pool.query('select * from kf_product where id=? LIMIT ?,?',[$id,start,$count],(err,result)=>{
-		if(err) throw err;
-		res.send(result);
+		if(err){
+			next(err)
+			return
+		}
+		res.send({code:200,result});
 	});	
 });
 router.get("/contont",(req,res)=>{
 	var $id=req.query.id;
 	pool.query('select count (*) as kkk from kf_product where id=? ',[$id],(err,result)=>{
-		if(err) throw err;
-		res.send(result);
+		if(err){
+			next(err)
+			return
+		}
+		res.send({code:200,result});
 	});
 });
 module.exports=router;
