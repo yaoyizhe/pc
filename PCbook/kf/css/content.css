@@ -8,9 +8,9 @@
     z-index: 99999;
     padding: 15px;
     border: 1px solid transparent;
-		border-radius: 4px;
-		background: rgba(0, 0, 0, 0.6);
-		color: #fff;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
 }
 /*头部开始*/
 .head{width: 100%;
@@ -37,19 +37,17 @@
 	top: -10px;}
 .active .header_line:before, .pull-left>li>a:hover .header_line:before {
   width: 100%;}
-.PC .header_line:before {
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-	transition: width .4s;}
 .header_line:before {
 	content: "";
 	display: inline-block;
 	width: 0;
 	height: 2px;
 	background: #B5AA9A;
-	position: absolute;}
+	position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+	transition:.4s;}
 /*页面内容*/
 .bg_f{background:#f2f1ea;min-width: 1200px;}
 .content{width: 1200px;
@@ -57,8 +55,7 @@
 	display: flex;
 	justify-content: space-between;}
 	/*左边内容*/
-.content-left{width: 200px;
-	}
+.content-left{width: 200px;}
 .list-group{border: 1px solid #ddd;}
 .list-group-item{background: #8c222c;
 	height: 36px;
